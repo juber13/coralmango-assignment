@@ -107,7 +107,7 @@ const Users = () => {
 
         </div>
         <div className="search_container">
-          <input type="search" value={inputValue} placeholder="Enter name or age" onChange={(e) => setInputValue(e.target.value)}/>
+          <input type="search" value={inputValue} placeholder="filter..." onChange={(e) => setInputValue(e.target.value)}/>
         </div>
         {loding ? <p>Loding....</p> : 
           <div className="user-container">
