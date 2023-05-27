@@ -1,38 +1,135 @@
 .App {
+  width: 80%;
+  margin: 10px auto;
+  height: auto;
+  overflow: hidden;
+  padding-bottom: 10px;
+}
+
+
+
+.header{
+  width: 100%;
+  background-color: aliceblue;
+  padding: 10px 0;
+  text-align: right;
+}
+
+.toggle-btn{
+  border: none;
+  margin:10px;
+  padding: 10px;
+  cursor: pointer;
+  transition: 0.3s ease;
+  background-color: #bfbbbb;
+  color: #fff;
+}
+
+.toggle-btn:hover{
+  background-color: #ddd;
+}
+
+.filter-container{
+  padding-top: 10px;
+  display: grid;
+  grid-template-columns: 1fr 3.5fr;
+}
+
+.filter-option{
+  border: 1px solid #ddd;
+  padding: 10px;
+}
+
+.filter-view-message{
+  width: 300px;
+  border: 1px solid #ddd;
+  background-color: rgb(125, 195, 230);
+  padding: 10px;
+  color: blue;
+  font-weight: 700;
+}
+
+
+.search_container{
+  width: 100%;
+  padding: 10px 0;
+  margin: 0px auto;
+  text-align: left;
+  margin-right: 1.8rem;
+}
+
+.search_container input{
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  outline: none;
+  border-radius:5px;
+}
+
+
+.table-container{
+  width: 100%;
+  /* padding: 10px; */
+}
+
+table{
+  width: 100%;
+  border: 1px solid #ddd;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+td{
+  border: 1px dotted #ddd;
+  padding: 10px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+td:hover{
+  background-color: #e8eaf0;
+  cursor: pointer;
+}
+.user-container{
+  width: 100%;
+  display: flex;
+  align-items: center;
+   gap: 20px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.user-card{
+  width:200px;
+  /* max-width: 200px; */
+  height: 200px;
+  border: 1px solid #f1ebeb;
+  background-color: rgba(192, 194, 195, 0.832);
+  padding: 5px;
+}
+
+.user-info img{
+  width: 100px;
+  height: 100px;
+}
+
+.user-info{
+  width: 100%;
+  height: 100%;
+  background-color:#fff;
+  border: 1px solid #ddd;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  gap: 5px;
+  border-radius: 15px;
 }
 
-.App-link {
-  color: #61dafb;
-}
+.user-name{font-size:15px; font-weight : 600}
+.user-age{font-size:14px; font-weight : 500}
+.user-occupation{font-size:12px; font-weight : 400}
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
+
+
+@media screen  and (max-width : 550px) {
+  .user-container{
+    display: flex;
+    flex-direction: column;
   }
 }
