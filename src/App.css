@@ -43,10 +43,10 @@
 .filter-view-message{
   width: 300px;
   border: 1px solid #ddd;
-  background-color: rgb(125, 195, 230);
+  background-color: rgb(153, 210, 238);
   padding: 10px;
   color: blue;
-  font-weight: 700;
+  /* font-weight: 700; */
 }
 
 

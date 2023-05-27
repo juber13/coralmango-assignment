@@ -52,7 +52,7 @@ const Users = () => {
   const [loding, setLoding] = useState(false);
   const [toggle, setToggle] = useState(false);
   const [inputValue, setInputValue] = useState("");
-  const [filterValue, setfilterValue] = useState("");
+  const [filterValue, setfilterValue] = useState("name");
 
   const getUser = async () => {
     try {
