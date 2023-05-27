@@ -93,11 +93,11 @@ const Users = () => {
       <div className="container">
         <div className="filter-container">
         <div className="radio-btns">
-          <small style={{marginRight: "1rem"}}>Filter</small>
+          <small style={{marginRight: "1rem"}}>Sort</small>
            <select className="filter-option" onChange={(e) => filterTable(e)}>
             <option value="" selected>--select--</option>
-            <option value="name">Filter By Age</option>
-            <option value="age">Filter By Name</option>
+            <option value="name">By Age</option>
+            <option value="age"> By Name</option>
            </select>
         </div>
           {
