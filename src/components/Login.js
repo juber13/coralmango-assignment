@@ -10,7 +10,7 @@ const Login = () => {
 // demo123
 
 const userCredential = {
-  email :  "demo@coralmango",
+  email :  "demo@coralmango.com",
   password : "demo123" 
 }
 
